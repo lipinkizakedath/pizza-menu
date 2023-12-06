@@ -8,6 +8,7 @@ function Pizza(props) {
         <h3>{props.pizza.name}</h3>
         <p>{props.pizza.ingredients}</p>
         <p>{props.pizza.price}</p>
+        {props.pizza.soldOut && <span>SOLD OUT</span>}
       </div>
     </li>
   );
